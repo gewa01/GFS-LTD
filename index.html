@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GFS MOMBASA Ltd -P o Box 40942 Mombasa<br>Tel 0719596294<br>Email:george,wafula@outlook.com <br>Insurance, Business <br>Finance, and IT Services</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+        nav {
+            background-color: #a88732;
+            color: white;
+            padding: 1em;
+            text-align: center;
+        }
+        nav a {
+            color: white;
+            margin: 0 1em;
+            text-decoration: none;
+        }
+        .section {
+            padding: 2em;
+            text-align: center;
+        }
+        form {
+            max-width: 500px;
+            margin: 0 auto;
+            padding: 2em;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+        form div {
+            margin-bottom: 1em;
+        }
+        label {
+            display: block;
+            margin-bottom: 0.5em;
+        }
+        input, textarea {
+            width: 100%;
+            padding: 0.5em;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+        button {
+            padding: 0.5em 1em;
+            border: none;
+            border-radius: 5px;
+            background-color: #333;
+            color: white;
+            cursor: pointer;
+        }
+        @media (max-width: 600px) {
+            nav a {
+                display: block;
+                margin: 0.5em 0;
+            }
+        }
+    </style>
+</head>
+<body>
+<style>
+        a {
+            text-decoration: none;
+        }
+    </style>
+
+    <nav>
+        <a href="#home">Home</a>
+        <a href="#about-us">About Us</a>
+        <a href="#services">Our Services</a>
+        <a href="#login">Login</a>
+    </nav>
+
+    <section id="home" class="section">
+        <h1>Welcome to GFS Ltd</h1>
+        <p>Your one-stop solution for insurance,<br> business financing, and IT services.<br>PO Box 40942 Mombasa<br>Phone 0719596294<br>Email:george.wafula@outlook.com<br></p>
+    </section>
+
+    <section id="about-us" class="section">
+        <h2>About Us</h2>
+  <p> We are a leading provider of insurance, business financing,
+  and IT services,<br>
+  committed to excellence and customer satisfaction.</p>
+  
+    </section>
+	
+    <section id="services" class="section">
+        <h2>Our Services</h2><br><br>
+        <div>
+            <h3><a href="https://www.akinsure.com/insurance-in-kenya" target="_blank">Insurance Products</a>
+ </h3>
+            <p>Comprehensive insurance solutions tailored to your needs.</p>
+			<a href="https://www.akinsure.com/about/members" target="_blank"> Insurance Partners In Kenya</a>
+        </div><br><br>
+        <div>
+            <h3>Business Finance</h3>
+            <p>Expert financial advice and solutions to help your business grow.</p>
+        </div><br><br>
+        <div>
+            <h3>IT Services</h3>
+            <p>Innovative IT services to streamline your operations and boost efficiency.</p>
+        </div>
+    </section>
+
+    <section id="contact-form" class="section">
+        <h2>Contact Us</h2>
+        <form id="contactForm">
+            <div>
+               
+                <input type="text" id="name" name="name" placeholder="Your Name"required>
+            </div>
+            <div>
+               
+                <input type="tel" id="phone" name="phone"placeholder="Your Phone" required>
+            </div>
+            <div>
+                
+                <input type="email" id="email" name="email"placeholder="Your Email" required>
+            </div>
+            <div>
+               
+                <textarea id="message" name="message" rows="5"placeholder="Your Message" required></textarea>
+            </div>
+            <div>
+                <label for="attachment">Attach Document</label>
+                <input type="file" id="attachment" name="attachment"placeholder="Your Attatch Documens">
+            </div>
+            <button type="submit">Submit</button>
+        </form>
+    </section>
+
+
+
+    <script>
+        document.getElementById('contactForm').addEventListener('submit', function(event) {
+            event.preventDefault();
+            alert('Form submitted successfully!');
+        });
+
+        document.getElementById('loginForm').addEventListener('submit', function(event) {
+            event.preventDefault();
+            const username = document.getElementById('username').value;
+            const password = document.getElementById('password').value;
+            if (username === 'admin' && password === 'password') {
+                alert('Login successful!');
+            } else {
+                alert('Invalid login credentials!');
+            }
+        });
+    </script>
+
+</body>
+</html>
